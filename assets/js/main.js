@@ -254,3 +254,15 @@
   new PureCounter();
 
 })()
+
+
+// Le bouton de téléchargement
+document.getElementById('downloadButton').addEventListener('click', function() {
+  const url = './cv/mon_cv.pdf';  // Remplacez par le chemin de votre CV
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = 'mon_cv.pdf';  // Nom du fichier téléchargé
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+});
