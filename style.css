@@ -6,6 +6,9 @@
     box-sizing: border-box;
 }
 
+a{
+    color: yellow;
+}
 html {
     font-size: 10px;
     font-family: 'Montserrat', sans-serif;
